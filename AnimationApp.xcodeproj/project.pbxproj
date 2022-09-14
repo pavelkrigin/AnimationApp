@@ -13,6 +13,8 @@
 		CA2D595D28D22F950041E9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2D595B28D22F950041E9C6 /* Main.storyboard */; };
 		CA2D595F28D22F960041E9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2D595E28D22F960041E9C6 /* Assets.xcassets */; };
 		CA2D596228D22F960041E9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2D596028D22F960041E9C6 /* LaunchScreen.storyboard */; };
+		CA2D596B28D231840041E9C6 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = CA2D596A28D231840041E9C6 /* SpringAnimation */; };
+		CA2D597228D244390041E9C6 /* AnimationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2D597128D244390041E9C6 /* AnimationSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		CA2D595E28D22F960041E9C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2D596128D22F960041E9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA2D596328D22F960041E9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2D597128D244390041E9C6 /* AnimationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2D596B28D231840041E9C6 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +60,56 @@
 		CA2D595428D22F950041E9C6 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				CA2D595528D22F950041E9C6 /* AppDelegate.swift */,
-				CA2D595728D22F950041E9C6 /* SceneDelegate.swift */,
-				CA2D595928D22F950041E9C6 /* ViewController.swift */,
-				CA2D595B28D22F950041E9C6 /* Main.storyboard */,
-				CA2D595E28D22F960041E9C6 /* Assets.xcassets */,
-				CA2D596028D22F960041E9C6 /* LaunchScreen.storyboard */,
+				CA2D597028D241A20041E9C6 /* Models */,
+				CA2D596F28D232350041E9C6 /* SystemFiles */,
+				CA2D596E28D232190041E9C6 /* Resources */,
+				CA2D596D28D231E70041E9C6 /* ViewControllers */,
+				CA2D596C28D231C00041E9C6 /* Storyboards */,
 				CA2D596328D22F960041E9C6 /* Info.plist */,
 			);
 			path = AnimationApp;
+			sourceTree = "<group>";
+		};
+		CA2D596C28D231C00041E9C6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA2D595B28D22F950041E9C6 /* Main.storyboard */,
+				CA2D596028D22F960041E9C6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CA2D596D28D231E70041E9C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA2D595928D22F950041E9C6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA2D596E28D232190041E9C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA2D595528D22F950041E9C6 /* AppDelegate.swift */,
+				CA2D595728D22F950041E9C6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA2D596F28D232350041E9C6 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CA2D595E28D22F960041E9C6 /* Assets.xcassets */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		CA2D597028D241A20041E9C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA2D597128D244390041E9C6 /* AnimationSettings.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = AnimationApp;
+			packageProductDependencies = (
+				CA2D596A28D231840041E9C6 /* SpringAnimation */,
+			);
 			productName = AnimationApp;
 			productReference = CA2D595228D22F950041E9C6 /* AnimationApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = CA2D594928D22F950041E9C6;
+			packageReferences = (
+				CA2D596928D231840041E9C6 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = CA2D595328D22F950041E9C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +192,7 @@
 				CA2D595A28D22F950041E9C6 /* ViewController.swift in Sources */,
 				CA2D595628D22F950041E9C6 /* AppDelegate.swift in Sources */,
 				CA2D595828D22F950041E9C6 /* SceneDelegate.swift in Sources */,
+				CA2D597228D244390041E9C6 /* AnimationSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +384,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA2D596928D231840041E9C6 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA2D596A28D231840041E9C6 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2D596928D231840041E9C6 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA2D594A28D22F950041E9C6 /* Project object */;
 }
