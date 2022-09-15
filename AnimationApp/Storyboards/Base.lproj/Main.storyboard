@@ -88,6 +88,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPb-cK-dou"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -102,7 +105,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="changeAnimationButton" destination="1M9-7e-IXf" id="qc0-2r-vYg"/>
+                        <outlet property="curveLabel" destination="chO-rr-6KU" id="yVY-oi-p1l"/>
+                        <outlet property="delayLabel" destination="17Z-b3-uwq" id="4YK-fi-gq4"/>
+                        <outlet property="durationLabel" destination="fSd-CG-Myw" id="qEq-jv-gkb"/>
+                        <outlet property="forceLabel" destination="0Y5-uf-O7O" id="sIG-Kk-2jp"/>
+                        <outlet property="presetLabel" destination="hGb-Ol-yIY" id="HXx-7u-Ct6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

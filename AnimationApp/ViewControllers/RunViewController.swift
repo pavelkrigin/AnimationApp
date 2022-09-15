@@ -9,12 +9,14 @@ import UIKit
 
 final class RunViewController: UIViewController {
 
-    @IBOutlet var changeAnimationButton: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet var presetLabel: UILabel!
+    @IBOutlet var curveLabel: UILabel!
+    @IBOutlet var forceLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
+    @IBOutlet var delayLabel: UILabel!
         
+    @IBAction func runButton(_ sender: UIButton) {
     }
-
-
+    
 }
 
