@@ -48,7 +48,7 @@ extension AnimationSettings {
                 delay: delayes[index]
             )
             
-            settings.append()
+            settings.self
         }
         
         return settings

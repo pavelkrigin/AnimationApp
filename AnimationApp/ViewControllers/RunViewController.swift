@@ -7,11 +7,12 @@
 
 import UIKit
 
-class RunViewController: UIViewController {
+final class RunViewController: UIViewController {
 
+    @IBOutlet var changeAnimationButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 

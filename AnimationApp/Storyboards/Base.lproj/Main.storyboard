@@ -86,6 +86,9 @@
                             <constraint firstItem="duZ-4L-czx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="s5X-1j-mye"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeAnimationButton" destination="1M9-7e-IXf" id="qc0-2r-vYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
